@@ -5,7 +5,9 @@
 // import './temas-ts/04-destructuracion-obj-arre.ts'
 // import './temas-ts/05-destructura-funciones.ts'
 // import './temas-ts/06-Import-export.ts'
-import './temas-ts/07-classe.ts'
+//import './temas-ts/DistanciaEntreDosPuntos.ts'
+import './temas-ts/IdentificarTriangulo.ts'
+//import './temas-ts/07-classe.ts'
 
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'

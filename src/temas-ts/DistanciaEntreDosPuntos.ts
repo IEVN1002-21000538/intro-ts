@@ -1,24 +1,19 @@
-class Punto{
-    x:number;
-    y:number;
-    constructor(x:number,y:number){
-        this.x=x;
-        this.y=y;
+export class CalcularDistancia {
+    x1: number;
+    y1: number;
+    x2: number;
+    y2: number;
+
+    constructor(x1: number, y1: number, x2: number, y2: number) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
     }
-}
-//cada que se ingresen los datos de punto 1 o punto 2 lleva (x,y)
- //d=√((x 2 – x 1 )² + (y 2 – y 1 )²)
-class Calcular {
-    static calcularDistancia(punto1: Punto, punto2: Punto): number {
-        const dx = punto2.x - punto1.x;
-        const dy = punto2.y - punto1.y;
+
+    static calcularDis(x1: number, y1: number, x2: number, y2: number): number {
+        const dx = x2 - x1;
+        const dy = y2 - y1;
         return Math.sqrt(dx * dx + dy * dy);
     }
 }
-
-//aqui se ingresan
-const punto1 = new Punto(1, 2);
-const punto2 = new Punto(4, 6);
-
-const distancia = Calcular.calcularDistancia(punto1, punto2);
-console.log(`La distancia entre los puntos es: ${distancia}`);
